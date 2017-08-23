@@ -78,6 +78,9 @@ public extension MTKInterval {
     mutating func invert() {
         self = MTKInterval(rawValue: -self.rawValue)!
     }
+    func inverted() -> MTKInterval {
+        return MTKInterval(rawValue: -self.rawValue)!
+    }
 }
 
 public enum MTKTranspositionDirection {

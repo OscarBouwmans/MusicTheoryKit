@@ -22,13 +22,6 @@ public extension MTKNoteGroup {
         return aMidiNum < bMidiNum
     }
     private func isSortedByNoteName(_ a: MTKNote, _ b: MTKNote) -> Bool {
-        if a.octave == b.octave {
-            let aNatName = a.naturalName, bNatName = b.naturalName
-            if aNatName == bNatName {
-                return a.accidentalNumber < b.accidentalNumber
-            }
-            return MTKNote.order.index(of: aNatName)! < MTKNote.order.index(of: bNatName)!
-        }
-        return a.octave < b.octave
+        return a < b
     }
 }

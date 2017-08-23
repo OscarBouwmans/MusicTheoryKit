@@ -1,7 +1,7 @@
 import Foundation
 
 public extension MTKNote {
-    public init(note: NaturalName, accidental: Accidental, octave: MTKOctave) {
+    public init(_ note: NaturalName, _ accidental: Accidental, octave: MTKOctave) {
         self.number = note.noteNumber + 7 * accidental.number
         self.octave = octave
     }
