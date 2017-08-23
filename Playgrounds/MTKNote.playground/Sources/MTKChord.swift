@@ -10,21 +10,71 @@ import Foundation
 
 public class MTKChord: MTKNoteGroup {
     var patterns = MTKPatternList()
+    
     //  PATTERNS
     //  triads
-    private static let patternMajorTriad        =   [  0,  4,  1 ]
-    private static let patternMinorTriad        =   [  0, -3,  1 ]
-    private static let patternDiminishedTriad   =   [  0, -3, -6 ]
-    private static let patternAugmentedTriad    =   [  0,  4,  8 ]
+    public static let majorTriad: MTKPattern = [
+        .perfectUnison,
+        .majorThird,
+        .perfectFifth
+    ]
+    public static let minorTriad: MTKPattern = [
+        .perfectUnison,
+        .minorThird,
+        .perfectFifth
+    ]
+    public static let diminishedTriad: MTKPattern = [
+        .perfectUnison,
+        .minorThird,
+        .diminishedFifth
+    ]
+    public static let augmentedTriad: MTKPattern = [
+        .perfectUnison,
+        .majorThird,
+        .augmentedFifth
+    ]
     //  sevenths
-    private static let dominantSeventh          =   [  0,  4,  1, -2 ]
-    private static let majorSeventh             =   [  0,  4,  1,  5 ]
-    private static let minorSeventh             =   [  0, -3,  1, -2 ]
-    private static let halfDiminished           =   [  0, -3, -6, -2 ]
-    private static let diminishedSeventh        =   [  0, -1, -6, -9 ]
+    public static let dominantSeventh: MTKPattern = [
+        .perfectUnison,
+        .majorThird,
+        .perfectFifth,
+        .minorSeventh
+    ]
+    public static let majorSeventh: MTKPattern = [
+        .perfectUnison,
+        .majorThird,
+        .perfectFifth,
+        .majorSeventh
+    ]
+    public static let minorSeventh: MTKPattern = [
+        .perfectUnison,
+        .minorThird,
+        .perfectFifth,
+        .minorSeventh
+    ]
+    public static let halfDiminished: MTKPattern = [
+        .perfectUnison,
+        .minorThird,
+        .diminishedFifth,
+        .minorSeventh
+    ]
+    public static let diminishedSeventh: MTKPattern = [
+        .perfectUnison,
+        .minorThird,
+        .diminishedFifth,
+        .diminishedSeventh
+    ]
     //  misc
-    private static let sus4                     =   [  0, -1,  1 ]
-    private static let sus2                     =   [  0,  2,  1 ]
+    public static let sus4: MTKPattern = [
+        .perfectUnison,
+        .perfectFourth,
+        .perfectFifth
+    ]
+    public static let sus2: MTKPattern = [
+        .perfectUnison,
+        .majorSecond,
+        .perfectFifth
+    ]
 }
 
 public extension MTKChord {
