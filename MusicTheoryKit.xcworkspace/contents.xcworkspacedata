@@ -4,9 +4,15 @@
    <Group
       location = "container:"
       name = "MusicTheoryKit">
+      <FileRef
+         location = "group:MusicTheoryKit/MTKNoteNumberList.txt">
+      </FileRef>
    </Group>
    <Group
       location = "container:"
       name = "Playgrounds">
+      <FileRef
+         location = "group:Playgrounds/MTKNote.playground">
+      </FileRef>
    </Group>
 </Workspace>
