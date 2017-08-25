@@ -43,3 +43,9 @@ scale.notes[3].name()
 scale.notes[4].name()
 scale.notes[5].name()
 scale.notes[6].name()
+
+//  
+
+let note1 = MTKNote(.c, .doubleFlat, octave: 4)
+let note2 = MTKNote(.e, .doubleSharp, octave: 4)
+note1.intervalTo(note2)
