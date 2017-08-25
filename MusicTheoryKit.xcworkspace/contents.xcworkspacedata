@@ -5,14 +5,112 @@
       location = "container:"
       name = "MusicTheoryKit">
       <FileRef
+         location = "group:MusicTheoryKit/MusicTheoryKit.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:MusicTheoryKit/MTKNoteNumberList.txt">
       </FileRef>
+      <Group
+         location = "container:"
+         name = "Sources">
+         <FileRef
+            location = "group:MusicTheoryKit/Sources/MTKChord.swift">
+         </FileRef>
+         <Group
+            location = "group:MusicTheoryKit/Sources/MTKInterval"
+            name = "MTKInterval">
+            <Group
+               location = "group:Extensions"
+               name = "Extensions">
+               <FileRef
+                  location = "group:MTKInterval-Operators.swift">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:MTKInterval.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:MusicTheoryKit/Sources/MTKNote"
+            name = "MTKNote">
+            <Group
+               location = "group:Enums"
+               name = "Enums">
+               <FileRef
+                  location = "group:MTKNote-Accidental.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MTKNote-NamingStyle.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MTKNote-NaturalName.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Extensions"
+               name = "Extensions">
+               <FileRef
+                  location = "group:MTKNote-Accidentals.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MTKNote-Enharmonic.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MTKNote-Initializers.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MTKNote-Operators.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MTKNote-Relation.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MTKNote-Transposing.swift">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:MTKNote-Types.swift">
+            </FileRef>
+            <FileRef
+               location = "group:MTKNote.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:MusicTheoryKit/Sources/MTKNoteGroup"
+            name = "MTKNoteGroup">
+            <Group
+               location = "group:Extensions"
+               name = "Extensions">
+               <FileRef
+                  location = "group:MTKNoteGroup-Initializers.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MTKNoteGroup-Operators.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MTKNoteGroup-Sort.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MTKNoteGroup-Transposing.swift">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:MTKNoteGroup.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:MusicTheoryKit/Sources/MTKPattern.swift">
+         </FileRef>
+         <FileRef
+            location = "group:MusicTheoryKit/Sources/MTKScale.swift">
+         </FileRef>
+      </Group>
    </Group>
    <Group
       location = "container:"
       name = "Playgrounds">
       <FileRef
-         location = "group:Playgrounds/MTKNote.playground">
+         location = "group:MTK Playground.playground">
       </FileRef>
    </Group>
 </Workspace>
