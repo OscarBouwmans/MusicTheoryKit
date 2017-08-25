@@ -5,8 +5,8 @@ public extension MTKNoteGroup {
         case noteName, pitch
     }
     
-    public func sort() {
-        switch sortingMethod {
+    public func sort(by method: SortingMethod) {
+        switch method {
         case .noteName:
             notes.sort(by: isSortedByNoteName)
         case .pitch:

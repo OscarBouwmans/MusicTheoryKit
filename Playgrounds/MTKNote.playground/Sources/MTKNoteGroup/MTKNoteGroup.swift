@@ -10,11 +10,6 @@ import Foundation
 
 public class MTKNoteGroup {
     public var notes: [MTKNote]
-    public var sortingMethod: SortingMethod = .noteName {
-        didSet {
-            self.sort()
-        }
-    }
     
     init() {
         self.notes = []
