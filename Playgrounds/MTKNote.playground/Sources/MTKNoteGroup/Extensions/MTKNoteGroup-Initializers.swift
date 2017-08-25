@@ -7,7 +7,5 @@ public extension MTKNoteGroup {
         for interval in pattern {
             notes.append(root.transposed(.up, by: interval))
         }
-        
-        self.sort()
     }
 }
