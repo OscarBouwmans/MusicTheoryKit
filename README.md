@@ -5,7 +5,7 @@ This document is a short introduction to this little project I’ve been working
 MusicTheoryKit lets you deal with music theory programmatically. Currently, that means things like: transposing notes, determine intervals, calculating frequencies and MIDI notes. Mostly pitch related functionality in the westerm music system (12 tones). Rhythm funcionalities may be added later, but no plans for that at the moment.
 
 ## Circle of Fifths
-The [circle of fifths](https://en.wikipedia.org/wiki/Circle_of_fifths) is the basis of MusicTheoryKit. A note is defined as a number along the circle of fifths, relative to C, counting clockwise. For example, `D` = `2`, `Ab` = `-4`. An interval is defined as a number representing how many clockwise steps should be taken on the circle of fifths. For example, from the `D` to the `Ab` would be a `-6` interval, also known as a *diminished fifth*.
+The [circle of fifths](https://en.wikipedia.org/wiki/Circle_of_fifths) is the basis of MusicTheoryKit. A note is defined as a number along the circle of fifths, relative to C, counting clockwise. For example, `D` = `2`, `Ab` = `-4`. An interval is defined as a number representing how many clockwise steps should be taken on the circle of fifths. For example, from the `D` to the `Ab` would be a `-6` jump on the circle, but more commonly known as a *diminished fifth* interval.
 
 In MusicTheoryKit this circle is not exactly a cicle, however, as it does not loop around into enharmonic equivalents, but rather continues into double sharps, triple sharps, etc., and similarly into the flats the other way.
 
