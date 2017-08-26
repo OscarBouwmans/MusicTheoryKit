@@ -24,6 +24,7 @@ In MusicTheoryKit this circle is not exactly a cicle, however, as it does not lo
 
 ## Transposition
 `MTKNote`s can be transposed in place using the mutating `.transpose` method:
+
     var note = MTKNote(.c, .natural, octave: 4)
     note.name() // C♮
     
@@ -34,6 +35,7 @@ In MusicTheoryKit this circle is not exactly a cicle, however, as it does not lo
     note.name() // E♭
 
 Alternatively, plus and minus operators can be used:
+
     var note = MTKNote(.f, .sharp, octave: 4)
     note.name() // F♯
     
@@ -44,6 +46,7 @@ Alternatively, plus and minus operators can be used:
     note.name() // E♮
 
 Transposing a note an octave up or down is done via `.octavate`:
+
     var note = MTKNote(.g, .natural, octave: 4)
     note.octavate(.up)
     note.octave // 5
