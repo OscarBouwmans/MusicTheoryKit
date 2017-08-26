@@ -9,4 +9,3 @@
 import Foundation
 
 public typealias MTKPattern = [MTKInterval]
-public typealias MTKPatternList = [String:MTKPattern]

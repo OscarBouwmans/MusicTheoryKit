@@ -9,8 +9,6 @@
 import Foundation
 
 public class MTKChord: MTKNoteGroup {
-    var patterns = MTKPatternList()
-    
     //  PATTERNS
     //  triads
     public static let majorTriad: MTKPattern = [

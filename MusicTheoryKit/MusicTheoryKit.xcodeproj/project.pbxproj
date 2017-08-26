@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		44CB42471F509461001F6A94 /* MusicTheoryKit_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 44CB42451F509461001F6A94 /* MusicTheoryKit_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44CB429A1F509551001F6A94 /* MTKChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB427D1F509551001F6A94 /* MTKChord.swift */; };
 		44CB429B1F509551001F6A94 /* MTKInterval-Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB427E1F509551001F6A94 /* MTKInterval-Operators.swift */; };
 		44CB429C1F509551001F6A94 /* MTKInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB42801F509551001F6A94 /* MTKInterval.swift */; };
 		44CB429D1F509551001F6A94 /* MTKNote-Accidental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB42821F509551001F6A94 /* MTKNote-Accidental.swift */; };
@@ -28,14 +27,14 @@
 		44CB42AB1F509551001F6A94 /* MTKNoteGroup-Transposing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB42931F509551001F6A94 /* MTKNoteGroup-Transposing.swift */; };
 		44CB42AC1F509551001F6A94 /* MTKNoteGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB42951F509551001F6A94 /* MTKNoteGroup.swift */; };
 		44CB42AD1F509551001F6A94 /* MTKPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB42971F509551001F6A94 /* MTKPattern.swift */; };
-		44CB42AE1F509551001F6A94 /* MTKScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB42981F509551001F6A94 /* MTKScale.swift */; };
+		44CB42B21F51B3AB001F6A94 /* MTKChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB42B01F51B3AB001F6A94 /* MTKChord.swift */; };
+		44CB42B31F51B3AB001F6A94 /* MTKScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB42B11F51B3AB001F6A94 /* MTKScale.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44CB42421F509461001F6A94 /* MusicTheoryKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MusicTheoryKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CB42451F509461001F6A94 /* MusicTheoryKit_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicTheoryKit_macOS.h; sourceTree = "<group>"; };
 		44CB42461F509461001F6A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44CB427D1F509551001F6A94 /* MTKChord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MTKChord.swift; path = MusicTheoryKit/Sources/MTKChord.swift; sourceTree = "<group>"; };
 		44CB427E1F509551001F6A94 /* MTKInterval-Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTKInterval-Operators.swift"; sourceTree = "<group>"; };
 		44CB42801F509551001F6A94 /* MTKInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTKInterval.swift; sourceTree = "<group>"; };
 		44CB42821F509551001F6A94 /* MTKNote-Accidental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTKNote-Accidental.swift"; sourceTree = "<group>"; };
@@ -55,7 +54,8 @@
 		44CB42931F509551001F6A94 /* MTKNoteGroup-Transposing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MTKNoteGroup-Transposing.swift"; sourceTree = "<group>"; };
 		44CB42951F509551001F6A94 /* MTKNoteGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTKNoteGroup.swift; sourceTree = "<group>"; };
 		44CB42971F509551001F6A94 /* MTKPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MTKPattern.swift; path = MusicTheoryKit/Sources/MTKPattern.swift; sourceTree = "<group>"; };
-		44CB42981F509551001F6A94 /* MTKScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MTKScale.swift; path = MusicTheoryKit/Sources/MTKScale.swift; sourceTree = "<group>"; };
+		44CB42B01F51B3AB001F6A94 /* MTKChord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MTKChord.swift; path = Subclasses/MTKChord.swift; sourceTree = "<group>"; };
+		44CB42B11F51B3AB001F6A94 /* MTKScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MTKScale.swift; path = Subclasses/MTKScale.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +163,7 @@
 		44CB42961F509551001F6A94 /* MTKNoteGroup */ = {
 			isa = PBXGroup;
 			children = (
+				44CB42AF1F51B398001F6A94 /* Subclasses */,
 				44CB42941F509551001F6A94 /* Extensions */,
 				44CB42951F509551001F6A94 /* MTKNoteGroup.swift */,
 			);
@@ -173,15 +174,22 @@
 		44CB42991F509551001F6A94 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				44CB427D1F509551001F6A94 /* MTKChord.swift */,
 				44CB42811F509551001F6A94 /* MTKInterval */,
 				44CB428F1F509551001F6A94 /* MTKNote */,
 				44CB42961F509551001F6A94 /* MTKNoteGroup */,
 				44CB42971F509551001F6A94 /* MTKPattern.swift */,
-				44CB42981F509551001F6A94 /* MTKScale.swift */,
 			);
 			name = Sources;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		44CB42AF1F51B398001F6A94 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				44CB42B01F51B3AB001F6A94 /* MTKChord.swift */,
+				44CB42B11F51B3AB001F6A94 /* MTKScale.swift */,
+			);
+			name = Subclasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,12 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44CB429A1F509551001F6A94 /* MTKChord.swift in Sources */,
 				44CB42A21F509551001F6A94 /* MTKNote-Initializers.swift in Sources */,
 				44CB42A91F509551001F6A94 /* MTKNoteGroup-Operators.swift in Sources */,
 				44CB42A31F509551001F6A94 /* MTKNote-Operators.swift in Sources */,
 				44CB42A51F509551001F6A94 /* MTKNote-Transposing.swift in Sources */,
 				44CB429E1F509551001F6A94 /* MTKNote-NamingStyle.swift in Sources */,
+				44CB42B21F51B3AB001F6A94 /* MTKChord.swift in Sources */,
 				44CB429B1F509551001F6A94 /* MTKInterval-Operators.swift in Sources */,
 				44CB42A71F509551001F6A94 /* MTKNote.swift in Sources */,
 				44CB429F1F509551001F6A94 /* MTKNote-NaturalName.swift in Sources */,
@@ -282,7 +290,7 @@
 				44CB42A61F509551001F6A94 /* MTKNote-Types.swift in Sources */,
 				44CB42AC1F509551001F6A94 /* MTKNoteGroup.swift in Sources */,
 				44CB42A81F509551001F6A94 /* MTKNoteGroup-Initializers.swift in Sources */,
-				44CB42AE1F509551001F6A94 /* MTKScale.swift in Sources */,
+				44CB42B31F51B3AB001F6A94 /* MTKScale.swift in Sources */,
 				44CB42AA1F509551001F6A94 /* MTKNoteGroup-Sort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,9 +13,6 @@
       <Group
          location = "container:"
          name = "Sources">
-         <FileRef
-            location = "group:MusicTheoryKit/Sources/MTKChord.swift">
-         </FileRef>
          <Group
             location = "group:MusicTheoryKit/Sources/MTKInterval"
             name = "MTKInterval">
@@ -79,6 +76,16 @@
             location = "group:MusicTheoryKit/Sources/MTKNoteGroup"
             name = "MTKNoteGroup">
             <Group
+               location = "container:"
+               name = "Subclasses">
+               <FileRef
+                  location = "group:MusicTheoryKit/Sources/MTKNoteGroup/Subclasses/MTKChord.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:MusicTheoryKit/Sources/MTKNoteGroup/Subclasses/MTKScale.swift">
+               </FileRef>
+            </Group>
+            <Group
                location = "group:Extensions"
                name = "Extensions">
                <FileRef
@@ -100,9 +107,6 @@
          </Group>
          <FileRef
             location = "group:MusicTheoryKit/Sources/MTKPattern.swift">
-         </FileRef>
-         <FileRef
-            location = "group:MusicTheoryKit/Sources/MTKScale.swift">
          </FileRef>
       </Group>
    </Group>
